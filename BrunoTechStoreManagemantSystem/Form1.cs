@@ -160,18 +160,7 @@ namespace BrunoTechStoreManagemantSystem
 
         }
 
-        private void pictureBox16_Click(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
-            {
-                WindowState = FormWindowState.Maximized;
-            }
-            else
-            {
-                WindowState = FormWindowState.Normal;
-            }
-            
-        }
+        
 
         private void pictureBox17_Click(object sender, EventArgs e)
         {
