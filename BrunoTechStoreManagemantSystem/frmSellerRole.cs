@@ -27,6 +27,7 @@ namespace BrunoTechStoreManagemantSystem
             this.Hide();
             LoginForm login = new LoginForm();
             login.Show();
+            
         }
 
         private void frmSellerRole_Load(object sender, EventArgs e)
@@ -45,6 +46,24 @@ namespace BrunoTechStoreManagemantSystem
         {
             lblTime.Text = DateTime.Now.ToLongTimeString();
             lblDate.Text = DateTime.Now.ToLongDateString();
+        }
+
+        private void pictureBoxMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBoxMaximize_Click(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            
         }
     }
 }

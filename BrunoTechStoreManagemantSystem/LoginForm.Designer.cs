@@ -104,6 +104,7 @@
             this.txtPassword.Size = new System.Drawing.Size(229, 26);
             this.txtPassword.TabIndex = 19;
             this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.MouseEnter += new System.EventHandler(this.txtPassword_MouseEnter);
             // 
             // lblUserName
             // 

@@ -118,6 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBoxMinimize.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAVFJREFUaEPt
+        mT1uwkAYRH0T8B4nUqT83CdS6hSpWOc2UbhJLkCxC6JLMNIUXzHFgBMPoH3SKz37ZLlad41Go3HZpKE+
+        97muRzejvzO56Yf6lVb1CRnnkXJ9J+MzW96Qcxp482Rwfpe5PCBLZ3zw+NnQQYOfyNLp83ZLhlwWZOmQ
+        EavI0mEjTpGlw0acIkuHjThFlg4bcYosHTbiFFk6bMQpsnTYiFNk6bARp8jSYSNOkaXDRpwiS4eNOEWW
+        DhtxiiwdNuIUWTpsxCmydNiIU2TpsBGnyNJhI06RpcNGnCJLh41Ev3c/fyo7I4osHTYSZRFTZGdEkaXD
+        RqIsYorsjCiydNhIlEVMkZ0RRZYOG3GKLB024hRZOmzEKbJ0buFq8covd1flngxZTB+7O2SdRsr1lQ3O
+        6TLXF+ScR/jFtI/D/+z++ItpMZRHZDQajcZF0nUHXDqr5/jUblkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="pictureBoxMaximize.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAUxJREFUaEPt
+        mTtOA0EQRPcmeOc4SEh87oNETEDkWW6D8E18AQcztpyB11IFHdSKssdsG9RPeiHVbywiuwuCILhu0lCf
+        +lxXo5vR75nc9EP9TMv6iIzzSLm+kfGZLa/IOQ188mRwfhe53CNLZ/zD478NHXTwA1k6fd5uyZCXBVk6
+        ZMRVZOmwEU+RpcNGPEWWDhvxFFk6bMRTZOmwEU+RpcNGrOvd10VlN6zI0mEjVhbRIrthRZYOG7GyiBbZ
+        DSuydNiIlUW0yG5YkaXDRqwsokV2w4osHTZiVQ//ZDxgCjZijQfAeMAUbMQaD4DxgCnYiDUeAN0fcCnZ
+        DSuydNiIlUW0yG5YkaXDRjxFlg4b8RRZOmzEU2Tp/IevFv/4l7vLckeGXEzvu1tknUbK9YUNzuki12fk
+        nIf5iWlvh3/Z/fEnppuhPCAjCILgKum6AwbTIF57e4fcAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAehJREFUWEft
@@ -614,16 +636,4 @@
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAFRSURBVGhD7Zk9bsJAGER9E/AeJ1Kk/NwnUuoUqVjnNlG4SS5AsQuiSzDSFF8xxYATD6B90is9
-        +2S5WneNRqNx2aShPve5rkc3o78zuemH+pVW9QkZ55FyfSfjM1vekHMaePNkcH6XuTwgS2d88PjZ0EGD
-        n8jS6fN2S4ZcFmTpkBGryNJhI06RpcNGnCJLh404RZYOG3GKLB024hRZOmzEKbJ02IhTZOmwEafI0mEj
-        TpGlw0acIkuHjThFlg4bcYosHTbiFFk6bMQpsnTYiFNk6bARp8jSYSNOkaXDRpwiS4eNRL93P38qOyOK
-        LB02EmURU2RnRJGlw0aiLGKK7IwosnTYSJRFTJGdEUWWDhtxiiwdNuIUWTpsxCmydG7havHKL3dX5Z4M
-        WUwfuztknUbK9ZUNzuky1xfknEf4xbSPw//s/viLaTGUR2Q0Go3GRdJ1B1w6q+f41G5ZAAAAAElFTkSu
-        QmCC
-</value>
-  </data>
 </root>

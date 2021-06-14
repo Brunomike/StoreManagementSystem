@@ -22,6 +22,31 @@ namespace BrunoTechStoreManagemantSystem
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            loginValidation();
+        }
+        private void clearTextBoxes()
+        {
+            txtPassword.Text = "";
+            txtUserName.Text = "";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            clearTextBoxes();
+        }
+
+        private void pictureBoxExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void txtPassword_MouseEnter(object sender, EventArgs e)
+        {
+            //loginValidation();
+        }
+
+        private void loginValidation()
+        {
             if (txtUserName.Text == "" || txtPassword.Text == "")
             {
                 MessageBox.Show("Plese enter the Username and Password!");
@@ -59,7 +84,7 @@ namespace BrunoTechStoreManagemantSystem
                             da.Fill(dt);
                             if (dt.Rows[0][0].ToString() == "1")
                             {
-                                sellerName = txtUserName.Text;
+                                //sellerName = txtUserName.Text;
                                 frmSellerRole seller = new frmSellerRole();
                                 sellerName = txtUserName.Text;
                                 seller.Show();
@@ -82,28 +107,13 @@ namespace BrunoTechStoreManagemantSystem
                         }
 
                     }
-                  
+
                 }
                 else
                 {
                     MessageBox.Show("Select a Role!");
                 }
             }
-        }
-        private void clearTextBoxes()
-        {
-            txtPassword.Text = "";
-            txtUserName.Text = "";
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            clearTextBoxes();
-        }
-
-        private void pictureBoxExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

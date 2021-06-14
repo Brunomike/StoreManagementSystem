@@ -600,6 +600,7 @@
             this.ClientSize = new System.Drawing.Size(1068, 635);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MinimumSize = new System.Drawing.Size(1068, 635);
             this.Name = "frmSales";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSales";

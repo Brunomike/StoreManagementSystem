@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSellerRole));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBoxMinimize = new System.Windows.Forms.PictureBox();
+            this.pictureBoxMaximize = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pnlNavigation = new System.Windows.Forms.Panel();
             this.btnLogout = new System.Windows.Forms.Button();
@@ -43,26 +45,53 @@
             this.lblCategoryTitle = new System.Windows.Forms.Label();
             this.pnlFormLoader = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.pnlNavigation.SuspendLayout();
             this.pnlUser.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pnlFormDetails.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(131)))), ((int)(((byte)(0)))));
-            this.panel1.Controls.Add(this.pictureBox3);
+            this.panel1.Controls.Add(this.pictureBoxMinimize);
+            this.panel1.Controls.Add(this.pictureBoxMaximize);
             this.panel1.Controls.Add(this.pictureBox2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1272, 39);
             this.panel1.TabIndex = 1;
+            // 
+            // pictureBoxMinimize
+            // 
+            this.pictureBoxMinimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(131)))), ((int)(((byte)(0)))));
+            this.pictureBoxMinimize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBoxMinimize.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMinimize.Image")));
+            this.pictureBoxMinimize.Location = new System.Drawing.Point(1155, 0);
+            this.pictureBoxMinimize.Name = "pictureBoxMinimize";
+            this.pictureBoxMinimize.Size = new System.Drawing.Size(39, 39);
+            this.pictureBoxMinimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxMinimize.TabIndex = 6;
+            this.pictureBoxMinimize.TabStop = false;
+            this.pictureBoxMinimize.Click += new System.EventHandler(this.pictureBoxMinimize_Click);
+            // 
+            // pictureBoxMaximize
+            // 
+            this.pictureBoxMaximize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(131)))), ((int)(((byte)(0)))));
+            this.pictureBoxMaximize.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pictureBoxMaximize.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxMaximize.Image")));
+            this.pictureBoxMaximize.Location = new System.Drawing.Point(1194, 0);
+            this.pictureBoxMaximize.Name = "pictureBoxMaximize";
+            this.pictureBoxMaximize.Size = new System.Drawing.Size(39, 39);
+            this.pictureBoxMaximize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxMaximize.TabIndex = 5;
+            this.pictureBoxMaximize.TabStop = false;
+            this.pictureBoxMaximize.Click += new System.EventHandler(this.pictureBoxMaximize_Click);
             // 
             // pictureBox2
             // 
@@ -191,18 +220,6 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(131)))), ((int)(((byte)(0)))));
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(1194, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(39, 39);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
-            // 
             // frmSellerRole
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -213,12 +230,14 @@
             this.Controls.Add(this.pnlNavigation);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MaximumSize = new System.Drawing.Size(1272, 740);
+            this.MinimumSize = new System.Drawing.Size(1272, 740);
             this.Name = "frmSellerRole";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmSellerRole";
             this.Load += new System.EventHandler(this.frmSellerRole_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMinimize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.pnlNavigation.ResumeLayout(false);
             this.pnlUser.ResumeLayout(false);
@@ -226,7 +245,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.pnlFormDetails.ResumeLayout(false);
             this.pnlFormDetails.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -246,6 +264,7 @@
         private System.Windows.Forms.Panel pnlFormLoader;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBoxMaximize;
+        private System.Windows.Forms.PictureBox pictureBoxMinimize;
     }
 }
